@@ -1,0 +1,16 @@
+# Build artifacts
+.next/
+out/
+build/
+
+# Dependencies
+node_modules/
+.pnpm-store/
+
+# Lockfiles
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Other generated files or specific files you don't want formatted
+# e.g., some auto-generated files
