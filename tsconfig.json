@@ -30,7 +30,7 @@
     // Paths & Aliases
     "baseUrl": ".",
     "paths": {
-     "@/*": ["./src/*"]
+      "@/*": ["./src/*"]
     },
 
     // Incremental builds
