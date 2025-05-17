@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import "./globals.css"; // We'll create this soon for Tailwind
+import "./globals.css";
 
 export const metadata: Metadata = {
   title: "My Manual T3 App",
@@ -13,6 +13,15 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        {/*
+          The next/script component with strategy "beforeInteractive"
+          can also be placed here if preferred for very critical scripts.
+          However, placing it before the closing </body> tag with an
+          appropriate strategy is also common. For Font Awesome, ensuring
+          it loads reliably is key.
+        */}
+      </head>
       <body>{children}</body>
     </html>
   );

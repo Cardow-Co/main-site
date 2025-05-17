@@ -27,11 +27,11 @@
     "lib": ["dom", "dom.iterable", "esnext"], // List of library files to be included in the compilation.
     "skipLibCheck": true, // Skip type checking of all declaration files (*.d.ts).
 
-    // Paths & Aliases (we can configure this later if needed)
-    // "baseUrl": ".",
-    // "paths": {
-    //   "@/*": ["./src/*"]
-    // },
+    // Paths & Aliases
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"]
+    },
 
     // Incremental builds
     "incremental": true,
