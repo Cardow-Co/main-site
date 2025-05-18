@@ -1,18 +1,14 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faRocket, faCheck, faUser } from "@fortawesome/pro-solid-svg-icons"; // Example: Solid icons
-import { faUser as faUserRegular } from "@fortawesome/pro-regular-svg-icons"; // Example: Regular icons (Pro)
-import { faUser as faUserLight } from "@fortawesome/pro-light-svg-icons"; // Example: Light icons (Pro)
-import { faUser as faUserDuotone } from "@fortawesome/pro-duotone-svg-icons"; // Example: Duotone icons (Pro)
-import { faFontAwesome } from "@fortawesome/free-brands-svg-icons"; // Example: Brands icons
 import { Input } from "./components/ui/input"; // Example: Input
 import { Field, FieldGroup, Label } from "./components/ui/fieldset"; // Example: Fieldset
 import { Button } from "./components/ui/button"; // Example: Button
 
 export default function HomePage() {
+  // Using CDN Kit via <i> tags; no build-time auth needed
+
   return (
     <main className="flex min-h-screen flex-col items-center justify-center bg-gradient-to-b from-slate-900 to-slate-700 p-24">
       <h1 className="text-5xl font-bold text-white">
-        <FontAwesomeIcon icon={faRocket} className="mr-3" />
+        <i className="fa-solid fa-rocket mr-3"></i>
         Hello, Next.js Manually!
       </h1>
       <p className="mt-4 text-lg text-sky-200">
@@ -20,31 +16,19 @@ export default function HomePage() {
       </p>
       <div className="mt-8 rounded-lg bg-sky-500 p-4 text-white shadow-xl">
         This box should have a blue background!
-        <FontAwesomeIcon icon={faCheck} className="ml-2" />
+        <i className="fa-solid fa-check ml-2"></i>
       </div>
 
       <div className="mt-4 text-white">
         <p>Font Awesome Icons (React Components):</p>
-        <FontAwesomeIcon icon={faUser} className="mr-2" title="Solid User" />
-        <FontAwesomeIcon
-          icon={faUserRegular}
-          className="mr-2"
-          title="Regular User"
-        />
-        <FontAwesomeIcon
-          icon={faUserLight}
-          className="mr-2"
-          title="Light User"
-        />
-        <FontAwesomeIcon
-          icon={faUserDuotone}
-          className="mr-2"
-          title="Duotone User"
-        />
-        <FontAwesomeIcon
-          icon={faFontAwesome}
+        <i className="fa-solid fa-user mr-2" title="Solid User"></i>
+        <i className="fa-regular fa-user mr-2" title="Regular User"></i>
+        <i className="fa-light fa-user mr-2" title="Light User"></i>
+        <i className="fa-duotone fa-user mr-2" title="Duotone User"></i>
+        <i
+          className="fa-brands fa-font-awesome"
           title="Font Awesome Flag (Brands)"
-        />
+        ></i>
         <form>
           <FieldGroup>
             <Field>
