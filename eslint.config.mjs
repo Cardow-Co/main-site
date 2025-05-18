@@ -1,7 +1,7 @@
 // eslint.config.mjs
 import globals from "globals";
 import eslintJs from "@eslint/js";
-import tseslint from "typescript-eslint";
+import tseslint from "@typescript-eslint/eslint-plugin";
 import nextEslint from "@next/eslint-plugin-next";
 import eslintPluginPrettierRecommended from "eslint-plugin-prettier/recommended";
 
