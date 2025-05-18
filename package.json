@@ -5,13 +5,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "preinstall": "echo \"@awesome.me:registry=https://npm.fontawesome.com/\" > .npmrc && echo \"@fortawesome:registry=https://npm.fontawesome.com/\" >> .npmrc && echo \"//npm.fontawesome.com/:_authToken=${FONTAWESOME_NPM_AUTH_TOKEN}\" >> .npmrc",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "lint": "eslint . --ext .ts,.tsx --report-unused-disable-directives --max-warnings 0",
     "lint:fix": "eslint . --ext .ts,.tsx --fix",
     "format": "prettier --write \"**/*.{ts,tsx,js,jsx,json,md,css}\"",
-    "check-format": "prettier --check \"**/*.{ts,tsx,js,jsx,json,md,css}\""
+    "check-format": "prettier --check \"**/*.{ts,tsx,js,jsx,json,md,css}\"",
+    "preview": "opennextjs-cloudflare build && opennextjs-cloudflare preview"
   },
   "keywords": [],
   "author": "",
@@ -26,6 +28,7 @@
     "@fortawesome/pro-solid-svg-icons": "^6.7.2",
     "@fortawesome/react-fontawesome": "^0.2.2",
     "@headlessui/react": "^2.2.3",
+    "@opennextjs/cloudflare": "1.0.0-beta.4",
     "clsx": "^2.1.1",
     "framer-motion": "^12.12.1",
     "next": "^15.3.2",
@@ -34,6 +37,7 @@
   },
   "devDependencies": {
     "@eslint/js": "^9.27.0",
+    "@next/eslint-plugin-next": "^15.3.2",
     "@tailwindcss/postcss": "^4.1.7",
     "@types/node": "^22.15.18",
     "@types/react": "^19.1.4",
@@ -50,6 +54,6 @@
     "prettier-plugin-tailwindcss": "^0.6.11",
     "tailwindcss": "^4.1.7",
     "typescript": "^5.8.3",
-    "typescript-eslint": "^8.32.1"
+    "wrangler": "^4.15.2"
   }
 }
