@@ -1,0 +1,3 @@
+export const production = {"FONTAWESOME_PACKAGE_TOKEN":"D5D93EBB-3929-4850-BB2F-98C4EF5224E2"};
+export const development = {"FONTAWESOME_PACKAGE_TOKEN":"D5D93EBB-3929-4850-BB2F-98C4EF5224E2"};
+export const test = {};

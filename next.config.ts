@@ -2,9 +2,9 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  // Configure the base path to reflect the mount path of your environment
-  // For example, if your app is mounted at /app, set basePath to '/app'
-  basePath: "/home", // <--- Add your basePath here
+  // TODO: Set `basePath` to match your Webflow Cloud environment's mount path.
+  // For example, uncomment the next line if mounted at /app:
+  basePath: "/home",
 
   // Additional Next.js configuration options can be added here
   // For example:
